@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Swift / Xcode generated data
+**/.build/
+**/.swiftpm/
+**/build/
+**/DerivedData/
+**/*.xcuserstate
+**/xcuserdata/
+**/*.dSYM/
+**/*.app/
+**/*.appex/
+**/*.zip
+
+# Local runtime and QA output
+output/
+reviews/evidence/
+*.log
+*.tmp
+*.corrupt-*
+
+# Local credentials and signing material
+.env
+.env.*
+*.p12
+*.cer
+*.mobileprovision
+*.provisionprofile
+*.pem
+*.key
+
+# Finder alias left by an earlier local Xcode experiment
+native/WorkPulseNative/WorkPulse.xcodeproj的替身
+

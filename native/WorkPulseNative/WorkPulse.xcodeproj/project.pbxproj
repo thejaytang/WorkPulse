@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0557734256DBC5B39DDA81EA /* WorkPulseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 165EB42C0F4C0F258AB77B5E /* WorkPulseCore */; };
+		177F0DE944E7576E30CD66BA /* NotchOverlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBD83903EBB770411F9DAD3 /* NotchOverlayController.swift */; };
+		659DF05359562E56C7D0CC4B /* NotificationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AD0105A835649BF18272D2 /* NotificationCoordinator.swift */; };
+		727CB060ECCEB7D3F1D637B3 /* WorkPulseWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 58DDDF250AA5514801F2C49E /* WorkPulseWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A669B335E493FE924AC77537 /* WorkPulseMenuBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3797A4B81C820D2EA3A0BF /* WorkPulseMenuBarApp.swift */; };
+		C49B9E1BDC75BFD087DFC8C7 /* WorkPulseCore in Frameworks */ = {isa = PBXBuildFile; productRef = A580AEAD646720F70848152E /* WorkPulseCore */; };
+		CFEB433D335C265E1AF4F8AB /* WorkPulseWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09973FF72A5BD2518ADF6F0E /* WorkPulseWidget.swift */; };
+		E11000000000000000000001 /* WorkPulseAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11000000000000000000003 /* WorkPulseAssets.xcassets */; };
+		E11000000000000000000002 /* WorkPulseAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11000000000000000000003 /* WorkPulseAssets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DE06B7A4104455285380CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65AD4C91EC94C01F909B04A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EEE3D67AE8A47C56C67B297;
+			remoteInfo = WorkPulseWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6B7D431383D4A058E66475C4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				727CB060ECCEB7D3F1D637B3 /* WorkPulseWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09973FF72A5BD2518ADF6F0E /* WorkPulseWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkPulseWidget.swift; sourceTree = "<group>"; };
+		58DDDF250AA5514801F2C49E /* WorkPulseWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WorkPulseWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3797A4B81C820D2EA3A0BF /* WorkPulseMenuBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkPulseMenuBarApp.swift; sourceTree = "<group>"; };
+		81AD0105A835649BF18272D2 /* NotificationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCoordinator.swift; sourceTree = "<group>"; };
+		BF20D5A6E2A6C6A7275EC9EF /* WorkPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBD83903EBB770411F9DAD3 /* NotchOverlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchOverlayController.swift; sourceTree = "<group>"; };
+		D4462EEDE5B7B4D456085BD1 /* WorkPulseNative */ = {isa = PBXFileReference; lastKnownFileType = folder; name = WorkPulseNative; path = .; sourceTree = SOURCE_ROOT; };
+		E11000000000000000000003 /* WorkPulseAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WorkPulseAssets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47FA63A06E303A9222857842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0557734256DBC5B39DDA81EA /* WorkPulseCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D576E947FAE486AFAA454E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49B9E1BDC75BFD087DFC8C7 /* WorkPulseCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DAB28D9321232DA854B1294 = {
+			isa = PBXGroup;
+			children = (
+				B41EC70F709C12A00EFA4481 /* Packages */,
+				E11000000000000000000004 /* Resources */,
+				9DF2DE55768FDDBFBDE4CE0E /* WidgetExtension */,
+				A68E5F76F1526D7ECCEFE4FB /* WorkPulseMenuBar */,
+				8DDF8B343C11591395827895 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E11000000000000000000004 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E11000000000000000000003 /* WorkPulseAssets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8DDF8B343C11591395827895 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF20D5A6E2A6C6A7275EC9EF /* WorkPulse.app */,
+				58DDDF250AA5514801F2C49E /* WorkPulseWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DF2DE55768FDDBFBDE4CE0E /* WidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				09973FF72A5BD2518ADF6F0E /* WorkPulseWidget.swift */,
+			);
+			path = WidgetExtension;
+			sourceTree = "<group>";
+		};
+		A68E5F76F1526D7ECCEFE4FB /* WorkPulseMenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				CCBD83903EBB770411F9DAD3 /* NotchOverlayController.swift */,
+				81AD0105A835649BF18272D2 /* NotificationCoordinator.swift */,
+				5A3797A4B81C820D2EA3A0BF /* WorkPulseMenuBarApp.swift */,
+			);
+			name = WorkPulseMenuBar;
+			path = Sources/WorkPulseMenuBar;
+			sourceTree = "<group>";
+		};
+		B41EC70F709C12A00EFA4481 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D4462EEDE5B7B4D456085BD1 /* WorkPulseNative */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0EEE3D67AE8A47C56C67B297 /* WorkPulseWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05DCFF461781C8DC12064B22 /* Build configuration list for PBXNativeTarget "WorkPulseWidget" */;
+			buildPhases = (
+				D382D781AC24823C10ADCDA4 /* Sources */,
+				47FA63A06E303A9222857842 /* Frameworks */,
+				E11000000000000000000005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorkPulseWidget;
+			packageProductDependencies = (
+				165EB42C0F4C0F258AB77B5E /* WorkPulseCore */,
+			);
+			productName = WorkPulseWidget;
+			productReference = 58DDDF250AA5514801F2C49E /* WorkPulseWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		62492D822AADECF6A8FD0357 /* WorkPulse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADC524D279F3865ECF6475C9 /* Build configuration list for PBXNativeTarget "WorkPulse" */;
+			buildPhases = (
+				0EEE52CE90D11CCE03306F53 /* Sources */,
+				A6D576E947FAE486AFAA454E /* Frameworks */,
+				E11000000000000000000006 /* Resources */,
+				6B7D431383D4A058E66475C4 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15D51AEB9E7D895228FF7A99 /* PBXTargetDependency */,
+			);
+			name = WorkPulse;
+			packageProductDependencies = (
+				A580AEAD646720F70848152E /* WorkPulseCore */,
+			);
+			productName = WorkPulse;
+			productReference = BF20D5A6E2A6C6A7275EC9EF /* WorkPulse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65AD4C91EC94C01F909B04A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = EF0DD82F9D4D253B62D97F89 /* Build configuration list for PBXProject "WorkPulse" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3DAB28D9321232DA854B1294;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B36C0FEEE86E83242E29F3B2 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8DDF8B343C11591395827895 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62492D822AADECF6A8FD0357 /* WorkPulse */,
+				0EEE3D67AE8A47C56C67B297 /* WorkPulseWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E11000000000000000000005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11000000000000000000002 /* WorkPulseAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11000000000000000000006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11000000000000000000001 /* WorkPulseAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EEE52CE90D11CCE03306F53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177F0DE944E7576E30CD66BA /* NotchOverlayController.swift in Sources */,
+				659DF05359562E56C7D0CC4B /* NotificationCoordinator.swift in Sources */,
+				A669B335E493FE924AC77537 /* WorkPulseMenuBarApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D382D781AC24823C10ADCDA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFEB433D335C265E1AF4F8AB /* WorkPulseWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15D51AEB9E7D895228FF7A99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EEE3D67AE8A47C56C67B297 /* WorkPulseWidget */;
+			targetProxy = 3DE06B7A4104455285380CB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06A84286E03DE85E76CF19F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Xcode/WorkPulse.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 23;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Xcode/HostInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.3.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.workpulse.prototype;
+				PRODUCT_NAME = WorkPulse;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				WORKPULSE_APP_GROUP = "$(DEVELOPMENT_TEAM).com.workpulse.shared";
+			};
+			name = Debug;
+		};
+		1413717EFF4B0006AF7F6420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2AA6C364CCA8BD5D46594F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Xcode/WorkPulseWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 23;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Xcode/WidgetInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 0.3.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.workpulse.prototype.widgets;
+				PRODUCT_NAME = WorkPulseWidget;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				WORKPULSE_APP_GROUP = "$(DEVELOPMENT_TEAM).com.workpulse.shared";
+			};
+			name = Release;
+		};
+		4523915C5F0B74AE75F30B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Xcode/WorkPulse.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 23;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Xcode/HostInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.3.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.workpulse.prototype;
+				PRODUCT_NAME = WorkPulse;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				WORKPULSE_APP_GROUP = "$(DEVELOPMENT_TEAM).com.workpulse.shared";
+			};
+			name = Release;
+		};
+		A2735603946FCF51EC54DF58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Xcode/WorkPulseWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 23;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Xcode/WidgetInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 0.3.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.workpulse.prototype.widgets;
+				PRODUCT_NAME = WorkPulseWidget;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				WORKPULSE_APP_GROUP = "$(DEVELOPMENT_TEAM).com.workpulse.shared";
+			};
+			name = Debug;
+		};
+		A2C39BA6E3D0373D1FF1D6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05DCFF461781C8DC12064B22 /* Build configuration list for PBXNativeTarget "WorkPulseWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2735603946FCF51EC54DF58 /* Debug */,
+				2AA6C364CCA8BD5D46594F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ADC524D279F3865ECF6475C9 /* Build configuration list for PBXNativeTarget "WorkPulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06A84286E03DE85E76CF19F6 /* Debug */,
+				4523915C5F0B74AE75F30B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EF0DD82F9D4D253B62D97F89 /* Build configuration list for PBXProject "WorkPulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2C39BA6E3D0373D1FF1D6CB /* Debug */,
+				1413717EFF4B0006AF7F6420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		B36C0FEEE86E83242E29F3B2 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		165EB42C0F4C0F258AB77B5E /* WorkPulseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WorkPulseCore;
+		};
+		A580AEAD646720F70848152E /* WorkPulseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WorkPulseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 65AD4C91EC94C01F909B04A7 /* Project object */;
+}
